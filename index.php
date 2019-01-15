@@ -10,7 +10,7 @@
 
     <title>Baratão Tecnologia</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
 
   </head>
@@ -267,8 +267,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/jquery/jquery.min.js"></script>
+    <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

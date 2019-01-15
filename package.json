@@ -1,37 +1,20 @@
 {
-    "title": "Modern Business",
-    "name": "startbootstrap-modern-business",
-    "version": "4.1.1",
-    "description": "A multipurpose HTML website template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/modern-business",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-modern-business/issues",
-        "email": "feedback@startbootstrap.com"
+    "name": "my_package",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.php",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
     "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-modern-business.git"
+      "type": "git",
+      "url": "https://github.com/TumaSenac20182/Pint2.git"
     },
-    "dependencies": {
-        "bootstrap": "4.1.1",
-        "font-awesome": "^4.7.0",
-        "jquery": "3.3.1"
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+      "url": ""
     },
-    "devDependencies": {
-        "browser-sync": "2.24.5",
-        "gulp": "^3.9.1"
-    }
-}
+    "homepage": "http://pint2.herokuapp.com/"
+  }

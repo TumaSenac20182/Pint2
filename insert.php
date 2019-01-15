@@ -7,8 +7,7 @@ if($_POST)
   $contato=$_POST['txtTelefone'];
   $email=$_POST['txtEmail'];
 
-  create($nome,$contato,$email);
+  create($nome, $contato, $email);
 
-  header('location:#');
-  die();
+  //header('location:');
 }

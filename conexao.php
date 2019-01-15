@@ -15,7 +15,7 @@ function getConnection()
 
     return $link;
 }
- if(! getConnection())
+ if(!getConnection())
  {
    echo "Erro ao conectar".mysqli_error().PHP_EOL;
  }

@@ -3,15 +3,15 @@ require "conexao.php";
 
  function create($nome,$email,$contato)
  {
-      $link=getConnection();
+    $link = getConnection();
 
-      $query="insert into tb_usuario(nome,email,contato) values({'$nome'},{'$email'},{'$contato'})";
+    $query="insert into tb_cadastro(nome,email,contato) values('{$nome}', '{$email}', '{$contato}')";
 
-      mysqli_query($link,$query) ;
-
-    if(!$link)
+    if(mysqli_query($link, $query))
     {
-      mysqli_close($link);
+      return true;
     }
 
+    mysqli_close($link);
+    exit;
  }

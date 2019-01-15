@@ -16,7 +16,7 @@ create database ProjetoIntegrador_M2;
    #endereco chave estrangeira
     seguimento varchar(100) not null,
     cnpj varchar(100) not null
-    #produtos chave estrangeira
+    #chave estrangera cadastro    
     #forma de pagemnto chave estrangeira
  );
 

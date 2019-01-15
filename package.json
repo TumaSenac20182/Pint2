@@ -1,0 +1,20 @@
+{
+    "name": "my_package",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.php",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/TumaSenac20182/Pint2.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+      "url": ""
+    },
+    "homepage": "http://pint2.herokuapp.com/"
+  }

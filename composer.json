@@ -1,14 +1,7 @@
 {
-    "name": "senacrio/sga",
-    "description": "Projeto exemplo PHP/Postgresql\u001b[D\u001b[D",
+    "name": "pint2/obaratao",
     "type": "project",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Luis Paulo Jr",
-            "email": "prof.lpjunior@gmail.com"
-        }
-    ],
     "minimum-stability": "dev",
     "require": {}
 }

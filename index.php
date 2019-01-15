@@ -62,13 +62,11 @@
                 <a class="dropdown-item" href="faq.html">FAQ</a>
               </div>
             </li>
-            <nav class="navbar navbar-black bg-black">
-              <form class="form-inline" action="blog-home-1.html">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-success" type="submit">Pesquisar</button>
-              </form>
-            </nav>
           </ul>
+          <form class="form-inline" action="blog-home-1.html">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-secondary" type="submit">Pesquisar</button>
+          </form>
         </div>
       </div>
     </nav>

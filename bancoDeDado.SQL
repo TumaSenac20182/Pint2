@@ -48,11 +48,3 @@ create database ProjetoIntegrador_M2;
     descricao varchar(400) not null,
     fabricante varchar(100) not null
  );
-
- create table tb_estoque
- (
-    id_estoque int  unsigned primary key auto_increment,
-    #produto chave estrabgeira
-    quantidade int  not null
-
- );

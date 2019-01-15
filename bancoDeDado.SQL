@@ -6,15 +6,14 @@ create database ProjetoIntegrador_M2;
     id_cadastro int  unsigned primary key auto_increment,
     nome varchar(100) not null,
     email varchar(250) not null,
-    contato varchar(100) not null
-    #loja chave estrangera
+    contato varchar(100) not null    
  );
 
   create table tb_loja
  (
     id_loja int  unsigned primary key auto_increment,
     nome varchar(200) not null,
-   # endereco chave estrangeira
+   #endereco chave estrangeira
     seguimento varchar(100) not null,
     cnpj varchar(100) not null
     #produtos chave estrangeira

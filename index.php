@@ -36,25 +36,6 @@
               <a class="nav-link" href="contact.html">Contato</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Other Pages
               </a>
@@ -68,6 +49,38 @@
             <button class="btn btn-secondary" type="submit">Pesquisar</button>
           </form>
         </div>
+        <div id="modalLogin" style="margin-left: 1%;z-index:999;">
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Login</button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login de usuários</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="verifLog.php" method="post" id="login">
+                    <div class="form-group">
+                      <label for="Iemail">Email</label>
+                      <input type="email" class="form-control" name="Nemail" id="Iemail" placeholder="Informe seu email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Isenha">Senha</label>
+                      <input type="password" class="form-control" name="Nsenha" id="Isenha" placeholder="Informe sua senha" required>
+                    </div>
+                  </form>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-secondary" data-target="#login">Entrar</button>
+                    <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -79,7 +92,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Primeiro Slide. -->
-          <div class="carousel-item active">         
+          <div class="carousel-item active">
             <img src="imagens/baratao.jpg" class="img-fluid img-thumbnail" alt="Baratao" style="max-width: 100%; height: 200%">
               <div class="carousel-caption d-none d-md-block">
                 <h3>Tudo sobre Tecnologia!</h3>

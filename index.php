@@ -72,34 +72,12 @@
     </nav>
 
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Primeiro Slide. -->
-          <div class="carousel-item active">         
-            <img src="imagens/baratao.jpg" class="img-fluid img-thumbnail" alt="Baratao" style="max-width: 100%; height: 200%">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Tudo sobre Tecnologia!</h3>
-            </div>
-          </div>
-           <!-- Segundo Slide. -->
-          <div class="carousel-item" style="background-image: url('imagens/baratao.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Fique bem Informado!</h3>
-            </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="imagens/baratao.jpg" style="width:100%; height:100%" alt="Primeiro Slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </header>
 

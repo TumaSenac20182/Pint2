@@ -72,11 +72,11 @@
                 <label for="InputPassword">Senha</label>
                 <input type="password" class="form-control" id="InputPassword1" placeholder="Senha">
               </div>
-            </form>
             <div class="modal-footer">
               <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
               <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            </div>     
+            </div>
+           </form>
           </div>
         </div>
       </div>

@@ -10,21 +10,21 @@
 
     <title>Baratão Tecnologia</title>
 
-    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><b>Página Inicial</b></a>
+        <a class="navbar-brand" href="index.php"><b>Página Inicial</b></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+       
+        <div class  ="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="about.html">Sobre nós</a>
@@ -41,7 +41,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                 <a class="dropdown-item" href="faq.html">FAQ</a>
-              </div>
+          </div>
             </li>
           </ul>
           <form class="form-inline" action="blog-home-1.html">
@@ -49,46 +49,46 @@
             <button class="btn btn-secondary" type="submit">Pesquisar</button>
           </form>
         </div>
-        <div id="modalLogin" style="margin-left: 1%;z-index:999;">
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Login</button>
 
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Login de usuários</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form action="verifLog.php" method="post" id="login">
-                    <div class="form-group">
-                      <label for="Iemail">Email</label>
-                      <input type="email" class="form-control" name="Nemail" id="Iemail" placeholder="Informe seu email" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="Isenha">Senha</label>
-                      <input type="password" class="form-control" name="Nsenha" id="Isenha" placeholder="Informe sua senha" required>
-                    </div>
-                  </form>
-                  <div class="modal-footer">
-                    <button type="submit" class="btn btn-secondary" data-target="#login">Entrar</button>
-                    <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  </div>
-                </div>
+      <!--Área de Login-->
+      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 2%;z-index:999;">Login</button>
+        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login de Usuário</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </div>
+              <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="InputEmail">Endereço de email</label>
+                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+              </div>
+              <div class="form-group">
+                <label for="InputPassword">Senha</label>
+                <input type="password" class="form-control" id="InputPassword1" placeholder="Senha">
+              </div>
+            </form>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success" data-target="#login">Entrar</button>
+              <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>     
           </div>
         </div>
       </div>
+    </div>
     </nav>
 
+  <!--Primeiro Slide-->
     <header>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="imagens/baratao.jpg" style="width:100%; height:100%" alt="Primeiro Slide">
+            <img class="img-fluid" src="imagens/baratao.jpg" style="width: 100%; height:45em" alt="Primeiro Slide">
           </div>
         </div>
       </div>
@@ -254,11 +254,13 @@
       </div>
       <!-- /.container -->
     </footer>
+    
 
     <!-- Bootstrap core JavaScript -->
-    <script src="resources/jquery/jquery.min.js"></script>
-    <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
   </body>
-
 </html>

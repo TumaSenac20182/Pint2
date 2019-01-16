@@ -62,7 +62,7 @@
                 </button>
               </div>
               <div class="modal-body">
-            <form>
+            <form action="verifLog.php" method="post" id="Ilogin">
               <div class="form-group">
                 <label for="InputEmail">Endereço de email</label>
                 <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
@@ -74,7 +74,7 @@
               </div>
             </form>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-success" data-target="#login">Entrar</button>
+              <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
               <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
             </div>     
           </div>

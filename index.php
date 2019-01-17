@@ -48,6 +48,11 @@
             <button class="btn btn-secondary" type="submit">Pesquisar</button>
           </form>
         </div>
+<<<<<<< HEAD
+        <div id="modalLogin" style="margin-left: 1%;z-index: 100%;">
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Login</button>
+=======
+>>>>>>> f324f44872eb92663b36916271dea262433824d0
 
       <!--Área de Login-->
       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 2%;z-index:999;">Login</button>
@@ -78,6 +83,11 @@
            </form>
           </div>
         </div>
+        <div style="margin-left: 1%;">
+          <form action="#" method="post">
+            <button type="submit" class="btn btn-secondary">Cadastro</button>
+          </form>
+        </div>
       </div>
     </div>
     </nav>
@@ -87,7 +97,11 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
+<<<<<<< HEAD
+            <img class="d-block w-100" src="imagens/baratao.jpg" style="width:90%; height:100%" alt="Primeiro Slide">
+=======
             <img class="img-fluid" src="imagens/baratao.jpg" style="width: 100%; height:45em" alt="Primeiro Slide">
+>>>>>>> f324f44872eb92663b36916271dea262433824d0
           </div>
         </div>
       </div>

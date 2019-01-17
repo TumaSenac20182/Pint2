@@ -49,7 +49,7 @@
             <button class="btn btn-secondary" type="submit">Pesquisar</button>
           </form>
         </div>
-        <div id="modalLogin" style="margin-left: 1%;z-index:999;">
+        <div id="modalLogin" style="margin-left: 1%;z-index: 100%;">
           <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Login</button>
 
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -81,6 +81,11 @@
             </div>
           </div>
         </div>
+        <div style="margin-left: 1%;">
+          <form action="#" method="post">
+            <button type="submit" class="btn btn-secondary">Cadastro</button>
+          </form>
+        </div>
       </div>
     </nav>
 
@@ -88,7 +93,7 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="imagens/baratao.jpg" style="width:100%; height:100%" alt="Primeiro Slide">
+            <img class="d-block w-100" src="imagens/baratao.jpg" style="width:90%; height:100%" alt="Primeiro Slide">
           </div>
         </div>
       </div>

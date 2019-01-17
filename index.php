@@ -9,8 +9,12 @@
 
     <title>Baratão Tecnologia</title>
 
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+  <!--Use o Bootstrap local, caso não tenha conexão.
+  
+  <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">-->
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   </head>
 
   <body>
@@ -48,12 +52,6 @@
             <button class="btn btn-secondary" type="submit">Pesquisar</button>
           </form>
         </div>
-<<<<<<< HEAD
-        <div id="modalLogin" style="margin-left: 1%;z-index: 100%;">
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Login</button>
-=======
->>>>>>> f324f44872eb92663b36916271dea262433824d0
-
       <!--Área de Login-->
       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 2%;z-index:999;">Login</button>
         <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -84,9 +82,6 @@
           </div>
         </div>
         <div style="margin-left: 1%;">
-          <form action="#" method="post">
-            <button type="submit" class="btn btn-secondary">Cadastro</button>
-          </form>
         </div>
       </div>
     </div>
@@ -97,11 +92,7 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-<<<<<<< HEAD
-            <img class="d-block w-100" src="imagens/baratao.jpg" style="width:90%; height:100%" alt="Primeiro Slide">
-=======
             <img class="img-fluid" src="imagens/baratao.jpg" style="width: 100%; height:45em" alt="Primeiro Slide">
->>>>>>> f324f44872eb92663b36916271dea262433824d0
           </div>
         </div>
       </div>
@@ -242,9 +233,14 @@
 
     <!-- Bootstrap core JavaScript -->
 
+  <!--Use o Bootstrap local, caso não tenha conexão.
+  
+  <script src="resources/jquery/jquery.min.js"></script>
+  <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
- 
+
   </body>
 </html>

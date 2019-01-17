@@ -64,10 +64,10 @@
                 </button>
               </div>
               <div class="modal-body">
-            <form action="verifLog.php" method="post" id="Ilogin">
+            <form action="verifLog.php" method="post" name="NloginForm" id="Ilogin" onsubmit="return verifDados()">
               <div class="form-group">
                 <label for="Iemail">Endereço de email</label>
-                <input type="email" class="form-control" name="Nsenha" id="Iemail" aria-describedby="emailHelp" placeholder="Seu email">
+                <input type="email" class="form-control" name="Nemail" id="Iemail" aria-describedby="emailHelp" placeholder="Seu email">
                 <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
               </div>
               <div class="form-group">

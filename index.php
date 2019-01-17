@@ -40,12 +40,12 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
+                  Other Pages
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                 <a class="dropdown-item" href="faq.html">FAQ</a>
           </div>
-            </li>
+             </li>
           </ul>
           <form class="form-inline" action="blog-home-1.html">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
@@ -53,6 +53,7 @@
           </form>
         </div>
       <!--Área de Login-->
+<<<<<<< HEAD
       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 2%;z-index:999;">Login</button>
         <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -77,14 +78,41 @@
             <div class="modal-footer">
               <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
               <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+=======
+      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 1%;z-index:999;">Login</button>
+        <form action="#" method="post" style="margin-left: 4%;z-index:999;">
+          <button type="submit" class="btn btn-secondary" data-target="#Icadastro">Cadastrar</button>
+        </form>
+          <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login de Usuário</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="verifLog.php" method="post" id="Ilogin">           
+                <div class="form-group">
+                  <label for="Iemail">Endereço de email</label>
+                  <input type="email" class="form-control" name="Nsenha" id="Iemail" aria-describedby="emailHelp" placeholder="Seu email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                </div>
+                <div class="form-group">
+                  <label for="Isenha">Senha</label>
+                  <input type="password" class="form-control" name="Nsenha" id="Isenha" placeholder="Senha">
+                </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
+                <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              </div>               
+            </form>
+>>>>>>> 99a0fe6266bd4b967c3c419cedf18a038e1b1ea5
             </div>
-           </form>
           </div>
         </div>
-        <div style="margin-left: 1%;">
-        </div>
       </div>
-    </div>
     </nav>
 
   <!--Primeiro Slide-->
@@ -92,7 +120,7 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="img-fluid" src="imagens/baratao.jpg" style="width: 100%; height:45em" alt="Primeiro Slide">
+            <img class="img-fluid" src="imagens/remake.jpg"  alt="Primeiro Slide">
           </div>
         </div>
       </div>
@@ -100,7 +128,6 @@
 
     <!-- Page Content -->
     <div class="container">
-
       <h1 class="my-4"></h1> <br>
 
       <!-- Marketing Icons Section -->
@@ -109,10 +136,10 @@
           <div class="card h-100">
             <h4 class="card-header">Hardware</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">Hardware é a parte física de um computador, é formado pelos componentes eletrônicos, como por exemplo, circuitos de fios e luz, placas, utensílios, correntes, e qualquer outro material em estado físico, que seja necessário para fazer com o que computador funcione...</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Leia mais</a>
             </div>
           </div>
         </div>
@@ -120,10 +147,10 @@
           <div class="card h-100">
             <h4 class="card-header">Armazenamento</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+              <p class="card-text">Existem várias unidades de armazenamento disponíveis. A mais comum é a unidade de disco rígido que estão incluídos na maioria dos computadores e que entre outras coisas, armazena a informação que permite iniciar o sistema e os programas, além de arquivos de texto, imagens áudio e vídeo do usuário...</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Leia mais</a>
             </div>
           </div>
         </div>
@@ -131,10 +158,10 @@
           <div class="card h-100">
             <h4 class="card-header">Monitores</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">O monitor é um dispositivo de saída para o computador que mostra em sua tela os resultados de suas operações. O monitor é conhecido como a tela do computador e é um periférico que se conecta ao computador para poder visualizar as ações e processos executados... </p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Leia mais</a>
             </div>
           </div>
         </div>

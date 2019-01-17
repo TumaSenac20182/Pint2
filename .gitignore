@@ -1,4 +1,7 @@
 node_modules
+<<<<<<< HEAD
+=======
 teste.php
 sqlpessoal.sql
 testeConexao.php
+>>>>>>> 90aeaf40a77a4206baa203f3b26f72299eb7bc24

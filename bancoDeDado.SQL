@@ -1,59 +1,95 @@
-create database ProjetoIntegrador_M2;
- use ProjetoIntegrador_M2;
+-- MySQL Workbench Forward Engineering
 
- create table tb_cadastro
- (
-    id_cadastro int  unsigned primary key auto_increment,
-    nome varchar(100) not null,
-    email varchar(250) not null,
-    contato varchar(100) not null
-    #loja chave estrangera
- );
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
-  create table tb_loja
- (
-    id_loja int  unsigned primary key auto_increment,
-    nome varchar(200) not null,
-   # endereco chave estrangeira
-    seguimento varchar(100) not null,
-    cnpj varchar(100) not null
-    #produtos chave estrangeira
-    #forma de pagemnto chave estrangeira
- );
+-- -----------------------------------------------------
+-- Schema kk2b9oe1yvatj576
+-- -----------------------------------------------------
 
-   create table tb_formaPgamento
- (
-    id_formaPgamento int  unsigned primary key auto_increment,
-    dinehiro boolean not null,
-    cartaoCred boolean not null,
-    cartaoDeb boolean not null
- );
-   create table tb_endereco
- (
-    id_endereco int  unsigned primary key auto_increment,
-    logradouro varchar(200) not null,
-    bairro  varchar(100) not null,
-    numero varchar(10)not null,
-    bairro varchar(100) not null,
-    cep varchar(100) not null,
-    UF varchar(2) not null,
-    referencia varchar(300) not null
- );
+-- -----------------------------------------------------
+-- Schema kk2b9oe1yvatj576
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `kk2b9oe1yvatj576` DEFAULT CHARACTER SET utf8 ;
+USE `kk2b9oe1yvatj576`;
 
-    create table tb_produto
- (
-    id_produto int  unsigned primary key auto_increment,
-    nome varchar(200) not null,
-    categoria  varchar(100) not null,
-    preco double not null,
-    descricao varchar(400) not null,
-    fabricante varchar(100) not null
- );
+-- -----------------------------------------------------
+-- Table `kk2b9oe1yvatj576`.`login`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kk2b9oe1yvatj576`.`login` (
+  `id_table1` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(250) NOT NULL,
+  `email` VARCHAR(250) NOT NULL,
+  `telefone` VARCHAR(100) NOT NULL,
+  `senha` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id_table1`))
+ENGINE = InnoDB;
 
- create table tb_estoque
- (
-    id_estoque int  unsigned primary key auto_increment,
-    #produto chave estrabgeira
-    quantidade int  not null
 
- );
+-- -----------------------------------------------------
+-- Table `kk2b9oe1yvatj576`.`loja`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kk2b9oe1yvatj576`.`loja` (
+  `id_dadoloja` INT NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `endereco` VARCHAR(45) NULL,
+  `cnpj` VARCHAR(45) NULL,
+  `seguimento` VARCHAR(45) NULL,
+  `login_id_table1` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id_dadoloja`),
+  INDEX `fk_loja_login1_idx` (`login_id_table1` ASC),
+  CONSTRAINT `fk_loja_login1`
+    FOREIGN KEY (`login_id_table1`)
+    REFERENCES `kk2b9oe1yvatj576`.`login` (`id_table1`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kk2b9oe1yvatj576`.`endereco`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kk2b9oe1yvatj576`.`endereco` (
+  `id_endereco` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `logradouro` VARCHAR(250) NOT NULL,
+  `bairro` VARCHAR(250) NOT NULL,
+  `numero` INT NOT NULL,
+  `cidade` VARCHAR(250) NOT NULL,
+  `UFF` VARCHAR(2) NOT NULL,
+  `referencias` VARCHAR(300) NULL,
+  `loja_id_dadoloja` INT NOT NULL,
+  PRIMARY KEY (`id_endereco`),
+  INDEX `fk_endereco_loja_idx` (`loja_id_dadoloja` ASC),
+  CONSTRAINT `fk_endereco_loja`
+    FOREIGN KEY (`loja_id_dadoloja`)
+    REFERENCES `kk2b9oe1yvatj576`.`loja` (`id_dadoloja`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kk2b9oe1yvatj576`.`produtos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kk2b9oe1yvatj576`.`produtos` (
+  `id_produtos` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(250) NULL,
+  `categoria` VARCHAR(250) NULL,
+  `preco` DOUBLE NULL,
+  `descricao` VARCHAR(300) NULL,
+  `fabricante` VARCHAR(250) NULL,
+  `loja_id_dadoloja` INT NOT NULL,
+  PRIMARY KEY (`id_produtos`),
+  INDEX `fk_produtos_loja1_idx` (`loja_id_dadoloja` ASC),
+  CONSTRAINT `fk_produtos_loja1`
+    FOREIGN KEY (`loja_id_dadoloja`)
+    REFERENCES `kk2b9oe1yvatj576`.`loja` (`id_dadoloja`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

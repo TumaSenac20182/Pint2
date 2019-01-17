@@ -2,27 +2,28 @@
 
   SESSION_start();
 
-  include "conexao.php";
+  include "testeConexao.php";
 
-  if(empty($_POST['Nusuario'] || $_POST['Nsenha'])) {
+  if(empty($_POST['Nemail'] || $_POST['Nsenha'])) {
     echo "Preencha todos os campos!";
     die;
   }
 
-  $usuario = mysqli_real_escape_string(getconnect(), $_POST['Nusuario']);
-  $senha = mysqli_real_escape_string(getconnect(), $_POST['Nsenha']);
+  $usuario = mysqli_real_escape_string(connection(), $_POST['Nemail']);
+  $senha = mysqli_real_escape_string(connection(), $_POST['Nsenha']);
 
-  $query= "select id_usuario, nome from tb_usuarios where nome = '{$usuario}' and senha = '{$senha}'";
+  $query= "select id, nome from tb_login where email = '{$usuario}' and senha = '{$senha}'";
 
-  $result = mysqli_query(getconnect(), $query);
+    $result = mysqli_query(connection(), $query);
 
+    //echo $result;
+    //exit;
   $row = mysqli_num_rows($result);
 
   if($row == 1) {
-    $_SESSION['Nusuario'] = $usuario;
+    $_SESSION['Nemail'] = $usuario;
     //header('location: painel.php');
-    //exit();
-    echo "Sucesso ao logar";
+    echo "Sucesso ao logar " . $usuario;
   } else {
     $_SESSION['nao_autenticado'] = true;
     //header('location: index.php');

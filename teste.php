@@ -4,7 +4,7 @@
 
   function cadastra($nome, $email, $telefone, $cpf, $rua, $numero, $bairro, $cidade) {
     $link = connection();
-    $query = "insert into tb_cadastroPessoal(nome, email, telefone, cpf, rua, numerocasa, bairro, cidade) values('{$nome}', '{$email}', '{$telefone}', '{$cpf}', '{$rua}', '{$numero}', '{$bairro}', '{$cidade}')";
+    $query = "insert into tb_cadastro(nome, email, telefone, cpf, rua, numerocasa, bairro, cidade) values('{$nome}', '{$email}', '{$telefone}', '{$cpf}', '{$rua}', '{$numero}', '{$bairro}', '{$cidade}')";
 
     mysqli_query($link, $query);
 

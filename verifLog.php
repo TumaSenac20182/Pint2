@@ -2,7 +2,7 @@
 
   SESSION_start();
 
-  include "testeConexao.php";
+  include "conexao.php";
 
   if(empty($_POST['Nemail'] || $_POST['Nsenha'])) {
     echo "Preencha todos os campos!";
@@ -12,7 +12,7 @@
   $usuario = mysqli_real_escape_string($link, $_POST['Nemail']);
   $senha = mysqli_real_escape_string($link, $_POST['Nsenha']);
 
-  $query= "select id, email, nome from tb_login where email = '{$usuario}' and senha = '{$senha}'";
+  $query= "select id, email, nome from vendedores where email = '{$usuario}' and senha = '{$senha}'";
 
   $result = mysqli_query($link, $query);
 

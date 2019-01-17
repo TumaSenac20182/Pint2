@@ -10,10 +10,10 @@
     <title>Baratão Tecnologia</title>
 
   <!--Use o Bootstrap local, caso não tenha conexão.
-  
+
   <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/modern-business.css" rel="stylesheet">-->
- 
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   </head>
 
@@ -26,7 +26,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-       
+
         <div class  ="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -66,13 +66,13 @@
               <div class="modal-body">
             <form action="verifLog.php" method="post" id="Ilogin">
               <div class="form-group">
-                <label for="InputEmail">Endereço de email</label>
-                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                <label for="Iemail">Endereço de email</label>
+                <input type="email" class="form-control" name="Nsenha" id="Iemail" aria-describedby="emailHelp" placeholder="Seu email">
                 <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
               </div>
               <div class="form-group">
-                <label for="InputPassword">Senha</label>
-                <input type="password" class="form-control" id="InputPassword1" placeholder="Senha">
+                <label for="Isenha">Senha</label>
+                <input type="password" class="form-control" name="Nsenha" id="Isenha" placeholder="Senha">
               </div>
             <div class="modal-footer">
               <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
@@ -214,7 +214,7 @@
       <!-- /.row -->
 
       <!-- Features Section -->
-     
+
       <!-- /.row -->
 
       <hr>
@@ -228,12 +228,12 @@
       </div>
       <!-- /.container -->
     </footer>
-    
+
 
     <!-- Bootstrap core JavaScript -->
 
   <!--Use o Bootstrap local, caso não tenha conexão.
-  
+
   <script src="resources/jquery/jquery.min.js"></script>
   <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
 -->

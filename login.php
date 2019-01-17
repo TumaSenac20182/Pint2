@@ -1,3 +1,7 @@
+<?php
+  SESSION_start();
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -28,7 +32,7 @@
 						</div>
 						<form action="verifLog.php" method="post">
 							<div class="form-group">
-								<input type="text" class="form-control" name="Nusuario" id="Iusuario" placeholder="Insira seu usuario" required>
+								<input type="email" class="form-control" name="Nemail" id="Iemail" placeholder="Insira seu email" required>
 							</div>
 							<div class="form-group">
 								<input type="password" class="form-control" name="Nsenha" id="Isenha" placeholder="Insira sua senha" required>

@@ -92,7 +92,7 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="img-fluid" src="imagens/baratao.jpg" style="width: 100%; height:45em" alt="Primeiro Slide">
+            <img class="img-fluid" src="imagens/remake.jpg"  alt="Primeiro Slide">
           </div>
         </div>
       </div>
@@ -100,7 +100,6 @@
 
     <!-- Page Content -->
     <div class="container">
-
       <h1 class="my-4"></h1> <br>
 
       <!-- Marketing Icons Section -->
@@ -109,10 +108,10 @@
           <div class="card h-100">
             <h4 class="card-header">Hardware</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">Hardware é a parte física de um computador, é formado pelos componentes eletrônicos, como por exemplo, circuitos de fios e luz, placas, utensílios, correntes, e qualquer outro material em estado físico, que seja necessário para fazer com o que computador funcione...</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Leia mais</a>
             </div>
           </div>
         </div>
@@ -120,10 +119,10 @@
           <div class="card h-100">
             <h4 class="card-header">Armazenamento</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+              <p class="card-text">Existem várias unidades de armazenamento disponíveis. A mais comum é a unidade de disco rígido que estão incluídos na maioria dos computadores e que entre outras coisas, armazena a informação que permite iniciar o sistema e os programas, além de arquivos de texto, imagens áudio e vídeo do usuário...</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Leia mais</a>
             </div>
           </div>
         </div>
@@ -131,10 +130,10 @@
           <div class="card h-100">
             <h4 class="card-header">Monitores</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">O monitor é um dispositivo de saída para o computador que mostra em sua tela os resultados de suas operações. O monitor é conhecido como a tela do computador e é um periférico que se conecta ao computador para poder visualizar as ações e processos executados... </p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Leia mais</a>
             </div>
           </div>
         </div>

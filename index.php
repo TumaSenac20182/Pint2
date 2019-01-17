@@ -40,12 +40,12 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
+                  Other Pages
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                 <a class="dropdown-item" href="faq.html">FAQ</a>
           </div>
-            </li>
+             </li>
           </ul>
           <form class="form-inline" action="blog-home-1.html">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
@@ -53,38 +53,39 @@
           </form>
         </div>
       <!--Área de Login-->
-      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 2%;z-index:999;">Login</button>
-        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login de Usuário</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-            <form action="verifLog.php" method="post" id="Ilogin">
-              <div class="form-group">
-                <label for="Iemail">Endereço de email</label>
-                <input type="email" class="form-control" name="Nsenha" id="Iemail" aria-describedby="emailHelp" placeholder="Seu email">
-                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-              </div>
-              <div class="form-group">
-                <label for="Isenha">Senha</label>
-                <input type="password" class="form-control" name="Nsenha" id="Isenha" placeholder="Senha">
-              </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
-              <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 1%;z-index:999;">Login</button>
+        <form action="#" method="post" style="margin-left: 4%;z-index:999;">
+          <button type="submit" class="btn btn-secondary" data-target="#Icadastro">Cadastrar</button>
+        </form>
+          <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login de Usuário</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="verifLog.php" method="post" id="Ilogin">           
+                <div class="form-group">
+                  <label for="Iemail">Endereço de email</label>
+                  <input type="email" class="form-control" name="Nsenha" id="Iemail" aria-describedby="emailHelp" placeholder="Seu email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                </div>
+                <div class="form-group">
+                  <label for="Isenha">Senha</label>
+                  <input type="password" class="form-control" name="Nsenha" id="Isenha" placeholder="Senha">
+                </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
+                <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              </div>               
+            </form>
             </div>
-           </form>
           </div>
         </div>
-        <div style="margin-left: 1%;">
-        </div>
       </div>
-    </div>
     </nav>
 
   <!--Primeiro Slide-->

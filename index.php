@@ -91,7 +91,7 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="img-fluid" src="imagens/remake.jpg"  alt="Primeiro Slide">
+            <img class="img-fluid mx-auto d-block" src="imagens/remake3.jpg" style="max-width:100%;"  alt="Primeiro Slide">
           </div>
         </div>
       </div>

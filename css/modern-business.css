@@ -3,6 +3,9 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
+body{
+  background-color: rgb(63, 58, 58);
+}
 
 @media (min-width: 992px) {
 }

@@ -30,16 +30,31 @@
             <li class="nav-item active">
               <a class="nav-link" href="about.html">Sobre nós</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" href="services.html">Serviços</a>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contato</a>
             </li>
             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Produtos
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="portfolio-4-col.html">Hardware</a>
+              </div>
+            <!--<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Pages</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="faq.html">FAQ</a>
+              </div>-->
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item active" href="blog-home-1.html">Blog Home 1</a>
+                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
               </div>
             </li>
           </ul>

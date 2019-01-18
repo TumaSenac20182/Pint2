@@ -18,18 +18,16 @@
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.php"><b>Página Inicial</b></a>
+        <a class="navbar-brand" href="index.php">Home</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class  ="collapse navbar-collapse" id="navbarResponsive">
+        <div class ="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="about.html">Sobre nós</a>
             </li>
             <li class="nav-item">
@@ -42,21 +40,26 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Other Pages
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="faq.html">FAQ</a>
-          </div>
-             </li>
+              </div>
+            </li>
           </ul>
-          <form class="form-inline" action="blog-home-1.html">
+          <form class="form-inline my-2 my-lg-0" action="blog-home-1.html">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-secondary" type="submit">Pesquisar</button>
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
           </form>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <button type="button" class="btn btn-secondary my-2 my-sm-0" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 1%;z-index:999;">Login</button>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="btn btn-secondary my-2 my-sm-0" href="#" data-target="#Icadastro">Cadastrar</a>
+            </li>
+          </ul>
         </div>
-      <!--Área de Login-->
-      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 1%;z-index:999;">Login</button>
-        <form action="#" method="post" style="margin-left: 4%;z-index:999;">
-          <button type="submit" class="btn btn-secondary" data-target="#Icadastro">Cadastrar</button>
-        </form>
+
+      <!--Área dos Login-->
           <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -66,6 +69,7 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
+
                 <div class="modal-body">
                   <form action="verifLog.php" method="post" id="Ilogin">           
                 <div class="form-group">
@@ -81,7 +85,7 @@
                 <button type="submit" class="btn btn-success" data-target="#Ilogin">Entrar</button>
                 <button type="close" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
               </div>               
-            </form>
+                </form>
             </div>
           </div>
         </div>

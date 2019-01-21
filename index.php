@@ -45,7 +45,7 @@
                 <a class="dropdown-item" href="armazenamento.html">Armazenamento</a>
                 <a class="dropdown-item" href="monitores.html">Monitores</a>
               </div>
-             
+
             <!--<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Pages</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,12 +66,12 @@
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
           </form>
             <button type="button" class="btn btn-secondary my-2 my-sm-0" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 1%;z-index:999;">Login</button>
-            <a class="btn btn-secondary" href="#" role="button" style="margin-left: 1%;z-index:999;">Cadastrar</a>       
+            <a class="btn btn-secondary" href="formularioDeCadastro.html  " role="button" style="margin-left: 1%;z-index:999;">Cadastrar</a>       
           </div>
         </div>
 
       <!--Área de Login-->
-      
+
       <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
        <div class="modal-dialog" role="document">
          <div class="modal-content">

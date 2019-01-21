@@ -59,7 +59,7 @@ require "conexao.php";
      mysqli_close($link);
      exit;
   }
-  
+
   function createCategoria($categoria)
   {
      $link = getConnection();
@@ -74,7 +74,7 @@ require "conexao.php";
      exit;
   }
 
-  
+
   function createFabricante($fabricante)
   {
      $link = getConnection();
@@ -89,8 +89,8 @@ require "conexao.php";
      exit;
   }
   //-----------------------------------------------------------------------------------
- 
- function findByLoja($Nome) 
+
+ function findByLoja($Nome)
  {
 
   $link = getConnection();
@@ -134,7 +134,7 @@ function findByProdruto($Nome)
   return $dados;
 }
 
-function findByLoja($Nome) 
+function findByLoja($Nome)
 {
 
   $link = getConnection();
@@ -177,7 +177,7 @@ function findByLogin($Email)
   return $dados;
 }
 
-function findByEndereço($endereco) 
+function findByEndereço($endereco)
 {
   $link = getConnection();
 
@@ -199,7 +199,7 @@ function findByEndereço($endereco)
 }
 
 
-function findByCategoria($categoria) 
+function findByCategoria($categoria)
 {
   $link = getConnection();
 
@@ -221,7 +221,7 @@ function findByCategoria($categoria)
 }
 
 
-function findByFabricante($fabricante) 
+function findByFabricante($fabricante)
 {
   $link = getConnection();
 
@@ -243,11 +243,11 @@ function findByFabricante($fabricante)
 }
 
   //--------------------------------------------------------------------------
-  function updateLogin($senha) 
+  function updateLogin($senha)
   {
     $link = getConnection();
 
-    
+
     $query = "update tb_vendedores set senha = '{$senha}'";
 
     mysqli_query($link, $query);
@@ -257,11 +257,11 @@ function findByFabricante($fabricante)
     }
   }
 
-  function updateProdutos($nome,$descricao,$preco) 
+  function updateProdutos($nome,$descricao,$preco)
   {
     $link = getConnection();
 
-    
+
     $query = "update tb_produtos set nome= '{$nome}', descricao='{$descricao}',preco='{$preco}'";
 
     mysqli_query($link, $query);
@@ -270,12 +270,12 @@ function findByFabricante($fabricante)
       mysqli_close($link);
     }
   }
-  
-  function updateLoja($nome,$cnpj,$seguimento) 
+
+  function updateLoja($nome,$cnpj,$seguimento)
   {
     $link = getConnection();
 
-    
+
     $query = "update tb_loja set nome= '{$nome}', cnpj='{$cnpj}',seguimento='{$seguimento}'";
 
     mysqli_query($link, $query);
@@ -285,7 +285,7 @@ function findByFabricante($fabricante)
     }
   }
 
-  function updateEndereco($logradouro,$bairro,$numero,$cidade,$uf,$referencia) 
+  function updateEndereco($logradouro,$bairro,$numero,$cidade,$uf,$referencia)
   {
     $link = getConnection();
 
@@ -297,8 +297,8 @@ function findByFabricante($fabricante)
     }
   }
 
-  
-  function updateCategoria($categoria) 
+
+  function updateCategoria($categoria)
   {
     $link = getConnection();
 
@@ -310,8 +310,8 @@ function findByFabricante($fabricante)
     }
   }
 
-  
-  function updateFabricante($fabricante) 
+
+  function updateFabricante($fabricante)
   {
     $link = getConnection();
 
@@ -323,85 +323,85 @@ function findByFabricante($fabricante)
     }
   }
   //------------------------------------------------------------------------------------
-    
+
     function deleteLogin($id) {
       $link = getConnection();
-  
+
       // definindo a query SQL para ser disparada para banco
       $query = "delete from tb_vendedores where id = '{$id}'";
-  
+
       mysqli_query($link, $query);
-  
+
       if(!$link) {
         mysqli_close($link);
       }
     }
 
-    
+
     function deleteProdutos($id) {
       $link = getConnection();
-  
+
       // definindo a query SQL para ser disparada para banco
       $query = "delete from tb_produtos where id = '{$id}'";
-  
+
       mysqli_query($link, $query);
-  
+
       if(!$link) {
         mysqli_close($link);
       }
     }
 
-    
+
     function deleteLoja($id) {
       $link = getConnection();
-  
+
       // definindo a query SQL para ser disparada para banco
       $query = "delete from tb_lojas where id = '{$id}'";
-  
+
       mysqli_query($link, $query);
-  
+
       if(!$link) {
         mysqli_close($link);
       }
     }
 
-    
+
     function deleteEndereço($id) {
       $link = getConnection();
-  
+
       // definindo a query SQL para ser disparada para banco
       $query = "delete from tb_endereço where id = '{$id}'";
-  
+
       mysqli_query($link, $query);
-  
+
       if(!$link) {
         mysqli_close($link);
       }
     }
 
-    
+
     function deleteCategoria($id) {
       $link = getConnection();
-  
+
       // definindo a query SQL para ser disparada para banco
       $query = "delete from tb_categorias where id = '{$id}'";
-  
+
       mysqli_query($link, $query);
-  
+
       if(!$link) {
         mysqli_close($link);
       }
     }
 
-    
+
     function deleteFabricante($id) {
       $link = getConnection();
-  
+
       // definindo a query SQL para ser disparada para banco
       $query = "delete from tb_fabricantes where id = '{$id}'";
-  
+
       mysqli_query($link, $query);
-  
+
       if(!$link) {
         mysqli_close($link);
       }

@@ -8,11 +8,12 @@
     echo "Preencha todos os campos!";
     die;
   }
+
   $link = getConnection();
   $usuario = mysqli_real_escape_string($link, $_POST['Nemail']);
   $senha = mysqli_real_escape_string($link, $_POST['Nsenha']);
 
-  $query= "select id, email, nome from tb_vendedores where email = '{$usuario}' and senha = '{$senha}'";
+  $query= "select id_vendedor, email, nome from tb_vendedores where email = '{$usuario}' and senha = '{$senha}'";
 
   $result = mysqli_query($link, $query);
 

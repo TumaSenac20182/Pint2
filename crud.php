@@ -7,7 +7,7 @@ require "conexao.php";
     $link = getConnection();
 
 
-    $query="insert into login(nome,email,telefone,senha) values('{$nome}', '{$email}', '{$telefone}', md5('{$senha}'))";
+    $query="insert into tb_vendedores(nome,email,telefone,senha) values('{$nome}', '{$email}', '{$telefone}', md5('{$senha}'))";
     if(mysqli_query($link, $query))
     {
       return true;
@@ -17,12 +17,13 @@ require "conexao.php";
     exit;
  }
 
+
  function createLoja($nome,$cnpj,$seguimento)
  {
     $link = getConnection();
 
 
-    $query="insert into loja(nome,cnpj,seguimento) values('{$nome}', '{$cnpj}', '{$seguimento}')";
+    $query="insert into tb_loja(nome,cnpj,seguimento) values('{$nome}', '{$cnpj}', '{$seguimento}')";
     if(mysqli_query($link, $query))
     {
       return true;
@@ -36,7 +37,7 @@ require "conexao.php";
   {
      $link = getConnection();
 
-     $query="insert into endereco(logradouro,bairro,numero,cidade,UFF,referencias,loja_id) values('{$logradouro}', '{$bairro}', '{$numero}', '{$cidade}', '{$UFF}', '{$referencias}',{$id_loja})";
+     $query="insert into tb_endereco(logradouro,bairro,numero,cidade,UFF,referencias,loja_id) values('{$logradouro}', '{$bairro}', '{$numero}', '{$cidade}', '{$UFF}', '{$referencias}',{$id_loja})";
      if(mysqli_query($link, $query))
      {
        return true;
@@ -50,7 +51,7 @@ require "conexao.php";
   {
      $link = getConnection();
 
-     $query="insert into produtos(nome,categoria,preco,descricao,fabricante,loja_id) values('{$nome}', '{$categoria}', '{$preco}', '{$descricao}', '{$fabricante}',{$id_loja})";
+     $query="insert into tb_produtos(nome,categoria,preco,descricao,fabricante,loja_id) values('{$nome}', '{$categoria}', '{$preco}', '{$descricao}', '{$fabricante}',{$id_loja})";
      if(mysqli_query($link, $query))
      {
        return true;
@@ -90,7 +91,7 @@ require "conexao.php";
   }
   //-----------------------------------------------------------------------------------
 
- function findByLoja($Nome)
+ function findByLoja($Nome,$id)
  {
 
   $link = getConnection();
@@ -134,7 +135,7 @@ function findByProdruto($Nome)
   return $dados;
 }
 
-function findByLoja($Nome)
+/*function findByLoja($Nome,$id)
 {
 
   $link = getConnection();
@@ -154,7 +155,8 @@ function findByLoja($Nome)
   }
 
   return $dados;
-}
+}*/
+
 function findByLogin($Email)
  {
 

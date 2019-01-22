@@ -18,22 +18,25 @@ require "conexao.php";
  }
 
 
- function createLoja($nome,$cnpj,$seguimento)
+ function createLoja($vendedor_id,$nome,$cnpj,$seguimento,$logradouro,$bairro,$cidade,$uf,$referencia)
  {
     $link = getConnection();
 
+    $query="call spr_registra_loja({$vendedor_id},'{$nome}','{$cnpj}','{$seguimento}','{$logradouro}','{$bairro}','{$cidade}','{$uf}','{$referencia}')";
 
-    $query="insert into tb_loja(nome,cnpj,seguimento) values('{$nome}', '{$cnpj}', '{$seguimento}')";
+   
+
     if(mysqli_query($link, $query))
     {
       return true;
     }
-
+    else {
+      return false;
+    }
     mysqli_close($link);
-    exit;
  }
 
-  function createEndereco($logradouro,$bairro,$numero,$cidade,$UFF,$referencias, $id_loja)
+  function createEndereco()
   {
      $link = getConnection();
 
@@ -113,12 +116,12 @@ require "conexao.php";
   return $dados;
 }
 
-function findByProdruto($Nome)
+function produtoFindByName($nome)
  {
 
   $link = getConnection();
 
-  $query = "select * from tb_produto where id = {$id} or nome = '{$loja}' ";
+  $query = "select * from lista_produtos where nome like '%{$nome}%'";
 
   $result = mysqli_query($link, $query);
 

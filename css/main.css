@@ -293,7 +293,7 @@ textarea.input100 {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 31px;
-  background-color: #827ffe;
+  background-color: #1d1d28;
   pointer-events: none;
   
   -webkit-transition: all 0.4s;
@@ -303,7 +303,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover:before {
-  background-color: #403866;
+  background-color: #3a3a47;
   width: calc(100% + 20px);
 }
 
@@ -378,3 +378,4 @@ textarea.input100 {
     opacity: 1;
   }
 }
+<i class="fas fa-home"></i>

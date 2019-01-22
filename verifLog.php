@@ -19,7 +19,7 @@
 
   if($row = mysqli_fetch_assoc($result)) {
     $_SESSION['Nemail'] = $usuario;
-    //header('location: painel.php');
+    header('location: painel.php');
     echo "Sucesso ao logar " . $usuario;
   } else {
     $_SESSION['nao_autenticado'] = true;

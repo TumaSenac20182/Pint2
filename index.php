@@ -65,7 +65,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0" action="blog-home-1.html">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Pesquisar</button>
           </form>
             <button type="button" class="btn btn-secondary my-2 my-sm-0" data-toggle="modal" data-target="#modalExemplo" style="margin-left: 1%;z-index:999;">Login</button>
             <a class="btn btn-secondary" href="formularioDeCadastro.html  " role="button" style="margin-left: 1%;z-index:999;">Cadastrar</a>       
@@ -79,7 +79,7 @@
          <div class="modal-content">
           <div class="modal-header">
            <h5 class="modal-title" id="exampleModalLabel">Login de Usuário</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"> 
              <span aria-hidden="true">&times;</span>
             </button>
            </div>

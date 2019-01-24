@@ -1,6 +1,6 @@
 <?php
 
-  require 'teste.php';
+  require 'crud.php';
 
   if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['Nnome'];
@@ -13,8 +13,7 @@
     $cidade = $_POST['Ncidade'];
 
     if(cadastra($nome, $email, $telefone, $cpf, $rua, $numero, $bairro, $cidade)) {
-      //header('location: #');
-      echo "Cadastro realizado com sucesso!";
+      header('location: index.htm');      
       die;
     }
 

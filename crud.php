@@ -33,10 +33,7 @@ require "conexao.php";
     else {
       return false;
     }
-    mysqli_close($link);
-  }
-
-    
+    mysqli_close($link);    
   }
 
   function createProdutos($id_loja, $categoria, $fabricante, $nome, $preco, $descricao)

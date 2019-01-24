@@ -19,7 +19,6 @@ body {
 nav {
 background-color: #2E2E2E;
 float: left;
-padding-left: 1%;
 padding-bottom: 50%;
 width: 180px;
 }
@@ -28,45 +27,42 @@ box-sizing: border-box;
 }
 a{
 color: white;
-padding-left: 7%;
+
 }
 table, th, td {
   border: 1px solid black;
-  padding-left: 125px;
-  padding-right: 125px;
-  padding-bottom: 20px;
+  padding-left: 300px;
   background-color: black;
   color: white;
 }	
  h1{
 color: black;
+float: right;
+padding-bottom: 20px;
 }
 </style>
 </head>
 
 <body>
 	<div id="div1">
-
     <nav class="nav flex-column">  
-	
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <div class="nav flex-column">
-			<img class="img-thumbnail" src="http://www.polarb2b.com/Content/_img/user.png" alt="Usuario" width="100%">
-              <a class="nav-link" href="painel.html">Painel do Administrador</a>
-              <a class="nav-link" href="CadastroProd.html">Cadastrar Produtos</a>
-              <a class="nav-link" href="#">Produtos</a>
-          </li>
-      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <div class="nav flex-column">
+            <img class="img-thumbnail" src="http://www.polarb2b.com/Content/_img/user.png" alt="Usuario" width="100%">
+            <a class="nav-link" href="painel.html">Painel do Administrador</a>
+            <a class="nav-link" href="CadastroProd.html">Cadastrar Produtos</a>
+            <a class="nav-link" href="#">Produtos</a>
+          </div>
+        </li>
+      </ul>
     </nav>
-	</div>
-    <br>
+  </div>
 
-	 <div id="div2" class="float-left">
-	 	<div class="container>
-		<h1 align="center">Lista de Produtos</h1>
-		
-	   <table class="table table-dark" >
+	  <div id="div2" class="float-left my-5">
+	 	<div class="container">
+		  <h1 align="center">Lista de Produtos</h1>
+	   <table class="table table-striped table-dark">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -77,25 +73,25 @@ color: black;
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
+          <td scope="row">1</th>
           <td>Mark</td>
           <td><a href="Alterar.html">&#9998;<a></td>
           <td><a href="#">&#10006;<a></td>
         </tr>
         <tr>
-          <th scope="row">2</th>
+          <td scope="row">2</th>
           <td>Jacob</td>
           <td><a href="Alterar.html">&#9998;<a></td>
           <td><a href="#">&#10006;<a></td>
         </tr>
         <tr>
-          <th scope="row">3</th>
+          <td scope="row">3</th>
           <td>Larry the Bird</td>
 		  <td><a href="Alterar.html">&#9998;<a></td>
           <td><a href="#">&#10006;<a></td>
         </tr>
 		        <tr>
-          <th scope="row">4</th>
+          <td scope="row">4</th>
           <td>Mark</td>
           <td><a href="Alterar.html">&#9998;<a></td>
           <td><a href="#">&#10006;<a></td>
@@ -109,7 +105,7 @@ color: black;
         <tr>
           <th scope="row">6</th>
           <td>Larry the Bird</td>
-		  <td><a href="Alterar.html">&#9998;<a></td>
+          <td><a href="Alterar.html">&#9998;<a></td>
           <td><a href="#">&#10006;<a></td>
         </tr>
       </tbody>

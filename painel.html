@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <head>
 
     <meta charset="utf-8">
@@ -12,120 +9,156 @@
 
     <title>Página do Administrador</title>
 	<style>
-/*body {
+body {
   font-family: "Lato", sans-serif;
-  background-color: #ccf2ff;
-}*/
-/*
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  background-color: #E6E6E6;
 }
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+ h1{
+color: black;
 }
-
-.sidenav a:hover {
-  color: #f1f1f1;
+nav {
+background-color: #2E2E2E;
+float: left;
+padding-left: 1%;
+padding-bottom: 50%;
+width: 180px;
 }
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.div1{
+box-sizing: border-box;
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+a{
+color: white;
+padding-left: 7%;
+}	
+.div2{
+float: center;
 }
+.div0{
+padding-left: 5%;
 }
-*/
 </style>
 </head>
 
 <body>
+	<div id="div1">
 
-
-
-        <!-- Sidebar -->
+    <nav class="nav flex-column">  
 	
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-
-    <!--Isso aqui é a navbar. Caso queira alterar algo, adicionar ou excluir, aí é com você-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-           <a class="navbar-brand nav-link dropdown-toggle btn btn-dark" role="button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Painel</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Administrador</a>
-              <a class="dropdown-item" href="CadastroProd.html">Cadastrar Produtos</a>
-              <a class="dropdown-item" href="Alterar.html">Alterar Produtos</a>
-              <a class="dropdown-item" href="dados.html">Alterar Dados</a>
-            </div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <div class="nav flex-column">
+			<img class="img-thumbnail" src="http://www.polarb2b.com/Content/_img/user.png" alt="Usuario" width="100%">
+              <a class="nav-link" href="#" color="white">Painel do Administrador</a>
+              <a class="nav-link" href="CadastroProd.html">Cadastrar Produtos</a>
+              <a class="nav-link" href="Produtos.html">Produtos</a>
           </li>
       </div>
     </nav>
+	</div>
     <br>
-    
-    <table class="table table-hover table-dark">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Primeiro</th>
-          <th scope="col">Último</th>
-          <th scope="col">Nickname</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
+<script type="text/javascript">
+var chart1;
+$(document).ready(function(){
+  chart1 = new Highcharts.Chart({
+    chart: {renderTo: 'container1'},
+    series: [{data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]}]
+  });
+});
+</script>
+<div class="container" id="div0">
+				<h1 align="center">Dados</h1>
+		<form>
+	<fieldset disabled>
+  <div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputNome">Nome</label>
+      <input type="text" class="form-control" id="inputNome" placeholder="Nome da Loja">
     </div>
-
-
-/<!--
+	<div class="form-group col-md-6">
+      <label for="inputSeg">Segmento</label>
+      <input type="text" class="form-control" id="inputSeg" placeholder="">
+    </div>
+	<div class="form-group col-md-6">
+      <label for="inputcnpj">CNPJ</label>
+      <input type="number" class="form-control" id="inputcnpj" placeholder="">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Senha</label>
+      <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Endereço</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Apartamento, hotel, casa, etc">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCidade">Cidade</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEstado">Estado</label>
+      <select id="inputEstado" class="form-control">
+        <option selected>Escolher...</option>
+<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputCEP">CEP</label>
+      <input type="text" class="form-control" id="inputCEP">
+    </div>
+  </div>
+<h2>Formas de Pagamento</h2>
+ <div class="custom-control custom-radio">
+  <input type="radio" id="din" name="din" class="custom-control-input">
+  <label class="custom-control-label" for="din">Dinheiro</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="deb" name="deb" class="custom-control-input">
+  <label class="custom-control-label" for="deb">Cartão de Débito</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="cred" name="cred" class="custom-control-input">
+  <label class="custom-control-label" for="cred">Cartão de Crédito</label>
+</div>
+  </div>
+  </fieldset>
+  <a href="dados.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Alterar</a>
+</form>
+<div>
+ <div id="div2">
   <div align="right" id="calendar">
 <SCRIPT LANGUAGE="JavaScript">
-<! Begin
 var day_of_week = new Array('Dom','Seg','Ter','Qua','Qui','Sex','Sab');
 var month_of_year = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
 
@@ -197,28 +230,10 @@ if( Calendar.getDate() > index )
 }
 cal += '</TD></TR></TABLE></TABLE>';
 
-//  MOSTRAR CALENDARIO
 document.write(cal);
-//  End -->
 </SCRIPT>
  </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-
-    <!-- Menu Toggle Script -->
-    <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+ </div>
     </script>
 
 </body>

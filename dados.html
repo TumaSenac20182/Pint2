@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -8,105 +8,144 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-<style>
+    <title>Página do Administrador</title>
+	<style>
 body {
   font-family: "Lato", sans-serif;
+  background-color: #E6E6E6;
+ }
+ h1{
+color: black;
 }
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+.div1{
+box-sizing: border-box;
 }
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+a{
+color: white;
+padding-left: 7%;
+nav {
+background-color: #2E2E2E;
+float: left;
+padding-left: 1%;
+padding-bottom: 50%;
+width: 180px;
 }
 </style>
-
 </head>
 
 <body>
+	<div id="div1">
 
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-       <div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<li class="sidebar-brand">
-                    <a href="index.html">
-                        Painel do Administrador
-                    </a>
-                    <a href="CadastroProd.html">Cadastrar Produtos</a>
-                    <a href="Alterar.html">Alterar Produtos</a>
-                    <a href="#">Alterar Dados</a>
-
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-<div id="page-content-wrapper">
-            <div class="container-fluid">
-				<span style="font-size:30px;cursor:pointer" class="glyphicon glyphicon-th-list" onclick="openNav()">&#9776;</span>
-				<table style="width:100%">
-  <tr>
-    <th>Nome</th>
-    <th>Empresa</th> 
-    <th>Idade</th>
-	<th>Endereço</th>
-	<th>Telefone</th>
-	<th>E-mail</th>
-  </tr>
-  <tr>
-    <td>Pedro</td>
-    <td>Smith</td> 
-    <td>25</td>
-	<td>Rua josé Clemente</td>
-	<td>472364089543</td>
-	<td>pedro@gmail.com</td>
-  </tr>
-</table>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
+    <nav class="nav flex-column">  
+	
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <div class="nav flex-column">
+			<img class="img-thumbnail" src="http://www.polarb2b.com/Content/_img/user.png" alt="Usuario" width="100%">
+              <a class="nav-link" href="painel.html" color="white">Painel do Administrador</a>
+              <a class="nav-link" href="CadastroProd.html">Cadastrar Produtos</a>
+              <a class="nav-link" href="Produtos.html">Produtos</a>
+          </li>
+      </div>
+    </nav>
+	</div>
+    <br>
+		<div class="container">
+				<h1 align="center">Formulário de Loja</h1>
+		<form>
+		<fieldset>
+  <div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputNome">Nome</label>
+      <input type="text" class="form-control" id="inputNome" placeholder="Nome da Loja">
     </div>
-    <!-- /#wrapper -->
-
-
-    <!-- Menu Toggle Script -->
-    <script>
+	<div class="form-group col-md-6">
+      <label for="inputSeg">Segmento</label>
+      <input type="text" class="form-control" id="inputSeg" placeholder="">
+    </div>
+	<div class="form-group col-md-6">
+      <label for="inputcnpj">CNPJ</label>
+      <input type="number" class="form-control" id="inputcnpj" placeholder="">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Senha</label>
+      <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress ">Endereço</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Apartamento, hotel, casa, etc">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCidade">Cidade</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEstado">Estado</label>
+      <select id="inputEstado" class="form-control">
+        <option selected>Escolher...</option>
+<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputCEP">CEP</label>
+      <input type="text" class="form-control" id="inputCEP">
+    </div>
+  </div>
+<h2>Formas de Pagamento</h2>
+ <div class="custom-control custom-radio">
+  <input type="radio" id="din" name="din" class="custom-control-input">
+  <label class="custom-control-label" for="din">Dinheiro</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="deb" name="deb" class="custom-control-input">
+  <label class="custom-control-label" for="deb">Cartão de Débito</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="cred" name="cred" class="custom-control-input">
+  <label class="custom-control-label" for="cred">Cartão de Crédito</label>
+</div>
+  <button type="submit" class="btn btn-primary">Enviar</button> 
+  </div>
+  </fieldset>
+</form>
+<div>
+		
+		
+         <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -115,3 +154,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+    </script>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>

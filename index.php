@@ -85,7 +85,7 @@
            </div>
 
            <div class="modal-body">
-             <form action="verifLog.php" method="post" name="NloginForm" id="Ilogin" onsubmit="return verifDados()">
+             <form action="painel.html" method="post" name="NloginForm" id="Ilogin" onsubmit="return verifDados()">
                <div class="form-group">
                  <label for="Iemail">Endereço de email</label>
                   <input type="email" class="form-control" name="Nemail" id="Iemail" aria-describedby="emailHelp" placeholder="Seu email">

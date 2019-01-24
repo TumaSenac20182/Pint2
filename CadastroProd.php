@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -62,26 +66,31 @@ width: 180px;
     <input type="file" class="form-control-file" id="Foto">
   </div>
 </form>
-		<form>
+		<form action="cadastroProdrutos.php" method="post"> 
+
+  <div class="form-group col-sm-10">
+    <label for="id" class="sr-only">ID</label>
+    <input type="hidden" class="form-control" id="id" name="txtId">
+  </div>
   <div class="form-group col-sm-10">
     <label for="Nome">Nome do Produto</label>
-    <input type="text" class="form-control" id="Nome" placeholder="Nome">
+    <input type="text" class="form-control" id="Nome"  name="txtNome" placeholder="Nome">
   </div>
   <div class="form-group col-sm-10">
     <label for="preco">Preço</label>
-	<input type="text" class="form-control" id="preco" placeholder="R$">
+	<input type="text" class="form-control" id="preco"  name="txtPreco"placeholder="R$">
   </div>
  <div class="form-group col-sm-10">
     <label for="categoria">Categoria</label>
-	<input type="text" class="form-control" id="categoria" placeholder="">
+	<input type="text" class="form-control" id="categoria" name="txtCategorias" placeholder="">
   </div>
   <div class="form-group col-sm-10">
     <label for="fabricante">Fabricante</label>
-	<input type="text" class="form-control" id="fabricante" placeholder="">
+	<input type="text" class="form-control" id="fabricante" name="txtFabricante" placeholder="">
   </div>
   <div class="form-group col-sm-10">
     <label for="Desc">Descrição</label>
-    <textarea class="form-control" id="Desc" rows="3" placeholder="Descreva o Produto"></textarea>
+    <textarea class="form-control" id="Desc"  name="txtDescricao" rows="3" placeholder="Descreva o Produto"></textarea>
 	  </div>
 	<div class="form-group col-md-6">
   <button type="submit" class="btn btn-primary">Enviar</button>

@@ -18,9 +18,9 @@
   $result = mysqli_query($link, $query);
 
   if($row = mysqli_fetch_assoc($result)) {
-    $_SESSION['Nemail'] = $usuario;
+    $_SESSION['Nemail'] = $id_vendedor;
     header('location: painel.php');
-    echo "Sucesso ao logar " . $usuario;
+    
   } else {
     $_SESSION['nao_autenticado'] = true;
     //header('location: index.php');

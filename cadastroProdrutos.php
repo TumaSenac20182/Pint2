@@ -12,8 +12,14 @@ if($_SERVER['REQUEST_METHOD'] ==='POST')
                                 $_POST['txtPreco'], 
                                 $_POST['txtDescricao']
                             )
-    ){
-        echo "sucesso";
+    )
+    {
+       header("locatin:CadastroProd.php");
     }
+        else
+    {
+        echo "Erro ao cadastrar";
+    }
+    
 }
 

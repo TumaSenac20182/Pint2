@@ -40,9 +40,7 @@ require "conexao.php";
   {
      $link = getConnection();
 
-     $query="call spr_registra_prodruto({$id_loja},'{$categoria}','{$fabricante}', '{$nome}', '{$preco}', '{$descricao}')";
-     echo $query;
-     exit;
+     $query="call spr_registra_prodruto({$id_loja},'{$categoria}','{$fabricante}', '{$nome}', '{$preco}', '{$descricao}')";    
 
      if(mysqli_query($link, $query))
       

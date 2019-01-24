@@ -14,7 +14,7 @@ require "conexao.php";
     }
 
     mysqli_close($link);
-    exit;
+   
  }
 
 
@@ -34,64 +34,30 @@ require "conexao.php";
       return false;
     }
     mysqli_close($link);
- }
+  }
 
-  function createEndereco()
+    
+  }
+
+  function createProdutos($id_loja, $categoria, $fabricante, $nome, $preco, $descricao)
   {
      $link = getConnection();
 
-     $query="insert into tb_endereco(logradouro,bairro,numero,cidade,UFF,referencias,loja_id) values('{$logradouro}', '{$bairro}', '{$numero}', '{$cidade}', '{$UFF}', '{$referencias}',{$id_loja})";
+     $query="call spr_registra_prodruto({$id_loja},'{$categoria}','{$fabricante}', '{$nome}', '{$preco}', '{$descricao}')";
+     echo $query;
+     exit;
+
      if(mysqli_query($link, $query))
+      
+
      {
        return true;
      }
 
      mysqli_close($link);
-     exit;
+    
   }
 
-  function createProduto($nome,$categoria,$preco,$descricao,$fabricante, $id_loja)
-  {
-     $link = getConnection();
-
-     $query="insert into tb_produtos(nome,categoria,preco,descricao,fabricante,loja_id) values('{$nome}', '{$categoria}', '{$preco}', '{$descricao}', '{$fabricante}',{$id_loja})";
-     if(mysqli_query($link, $query))
-     {
-       return true;
-     }
-
-     mysqli_close($link);
-     exit;
-  }
-
-  function createCategoria($categoria)
-  {
-     $link = getConnection();
-
-     $query="insert into tb_categorias(categoria) values('{$nome}')";
-     if(mysqli_query($link, $query))
-     {
-       return true;
-     }
-
-     mysqli_close($link);
-     exit;
-  }
-
-
-  function createFabricante($fabricante)
-  {
-     $link = getConnection();
-
-     $query="insert into tb_fabricantes(fabricante) values('{$nome}')";
-     if(mysqli_query($link, $query))
-     {
-       return true;
-     }
-
-     mysqli_close($link);
-     exit;
-  }
   //-----------------------------------------------------------------------------------
 
  function findByLoja($Nome,$id)
